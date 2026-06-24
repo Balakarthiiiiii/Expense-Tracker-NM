@@ -1,16 +1,44 @@
-# React + Vite
+# ExpenseIQ - Daily Expense Analytics Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based personal finance tracker that helps users monitor income, expenses, and spending habits through interactive charts and analytics.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Add income and expense transactions
+- Category-wise tracking with icons
+- Total income, expense, and net balance summary
+- Pie chart — spending breakdown by category
+- Bar chart — monthly income vs expense comparison
+- Filter transactions by All / Income / Expense
+- Delete transactions
+- Clean empty state for new users
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 18
+- Vite
+- Recharts
+- CSS3
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Install dependencies
+npm install
+
+### Run the app
+npm run dev
+
+Open http://localhost:5173 in your browser.
+
+## Project Structure
+
+src/
+├── components/
+│   ├── SummaryCards.jsx
+│   ├── TransactionForm.jsx
+│   ├── TransactionList.jsx
+│   └── Charts.jsx
+├── data/
+│   └── constants.js
+├── App.jsx
+└── App.css
